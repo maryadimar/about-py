@@ -37,8 +37,8 @@ df.reset_index(drop=True, inplace=True) #reset index sehingga dimulai dari 0
 
 #filter value column
 rslt_df = df.loc[df['nama kolom'] == 'value kolom']
-
-file_name = tanggal = data.find('small').text
+#nama file
+file_name = data.find('small').text
 out = rslt_df.to_excel(r'/home/dy/nama_file'+file_name+'.xlsx', sheet_name='nama_sheet', index=False)
 
 
